@@ -1,112 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Markup Reference</title>
+    <style>
+        body {
+            font-family: serif;
+            line-height: 1.4;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 4px 10px;
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+
+        video {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 
-
 <body>
+
     <h1>Page Title</h1>
-    <p>Generic sample text for makeup practice and screenshot recreation</p>
+    <p>Generic sample text for markup practice and screenshot recreation.</p>
     <ul>
         <li><a href="#">Section One</a></li>
         <li><a href="#">Section Two</a></li>
         <li><a href="#">Section Three</a></li>
         <li><a href="#">Section Four</a></li>
     </ul>
-   <hr> <h1>Article Heading</h1>
-    <p>This paragraph is neutral placeholder content used to demonstrate semantic structure and generic layout tags.</p>
-
-    <h3>Text Elements</h3>
-    <p>
-        This sentence includes <strong>strong text</strong>, 
-        <em>emphasized text</em>, 
-        <mark>marked text</mark>, 
-        <del>EX</del>.
-    </p>
-
-    <p>
-        This line shows keyboard input <kbd>Key + Key</kbd>, 
-        sample output <samp>Sample output</samp>, 
-        and code text <code>&lt;sample-tag&gt;</code>.
-    </p>
-
-    <p>
-        <em>Prepared by: Example Name</em><br>
-        <em>Date: March 19, 2026</em>
-    </p>
 
     <hr>
 
-    <h2>Lists And Data</h2>
-    
-    <h3>List Example</h3>
-    <ul>
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-    </ul>
+    <article>
+        <h2>Article Heading</h2>
+        <p>This paragraph is neutral placeholder content used to demonstrate semantic structure and generic layout tags.
+        </p>
 
-    <h3>Ordered Example</h3>
-    <ol>
-        <li>Step One</li>
-        <li>Step Two</li>
-        <li>Step Three</li>
-    </ol>
+        <h3>Text Elements</h3>
+        <p>
+            This sentence includes <strong>strong text</strong>, <em>emphasized text</em>, <mark>marked text</mark>,
+            <abbr title="Example">EX</abbr>.
+        </p>
+        <p>
+            This line shows keyboard input <kbd>Key + Key</kbd>, sample output <samp>Sample output</samp>, and code text
+            <code>&lt;sample-tag&gt;</code>.
+        </p>
+        <p>
+            <em>Prepared by: Example Name</em><br>
+            <em>Date: March 19, 2026</em>
+        </p>
+    </article>
 
-    <p>Sample Data Table</p>
-    <table border="1"> <thead>
-            <tr>
-                <th>Column A</th>
-                <th>Column B</th>
-                <th>Column C</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>Row 1</strong></td>
-                <td>Data 1B</td>
-                <td>Data 1C</td>
-            </tr>
-            <tr>
-                <td><strong>Row 2</strong></td>
-                <td>Data 2B</td>
-                <td>Data 2C</td>
-            </tr>
-            <tr>
-                <td><strong>Row 3</strong></td>
-                <td>Data 3B</td>
-                <td>Data 3C</td>
-            </tr>
-        </tbody>
-    </table>
+    <section>
+        <h3>Lists And Data</h3>
+        <p><strong>List Example</strong></p>
+        <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+        </ul>
 
-    <hr> <h2>Media Section</h2>
+        <p><strong>Ordered Example</strong></p>
+        <ol>
+            <li>Step One</li>
+            <li>Step Two</li>
+            <li>Step Three</li>
+        </ol>
 
-    <figure>
-        <img src="https://mdn.github.io/shared-assets/images/examples/fx-nightly-512.png" alt="Firefox Nightly icon" width="300">
-        <figcaption>Figure 1: Image example.</figcaption>
-    </figure>
+        <p>Sample Data Table</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Column A</th>
+                    <th>Column B</th>
+                    <th>Column C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Row 1</strong></td>
+                    <td>Data 1B</td>
+                    <td>Data 1C</td>
+                </tr>
+                <tr>
+                    <td><strong>Row 2</strong></td>
+                    <td>Data 2B</td>
+                    <td>Data 2C</td>
+                </tr>
+                <tr>
+                    <td><strong>Row 3</strong></td>
+                    <td>Data 3B</td>
+                    <td>Data 3C</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <figure>
-        <picture>
-            <source srcset="https://mdn.github.io/shared-assets/images/examples/fx-nightly-512.png" media="(min-width: 600px)">
-            <img src="https://mdn.github.io/shared-assets/images/examples/fx-nightly-512.png" alt="Forest view from below" width="300">
-        </picture>
-        <figcaption>Figure 2: Picture/source example.</figcaption>
-    </figure>
+    <section>
+        <h2>Media Section</h2>
+        <figure>
+            <img src="./image_01.png" alt="Nature path">
+            <figcaption>Figure 1: Image example.</figcaption>
+        </figure>
+        <figure>
+            <img src="./image_01.png" alt="Trees looking up">
+            <figcaption>Figure 2: Picture/source example.</figcaption>
+        </figure>
 
-    <figure>
-        <video controls width="400">
-            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
-            თქვენს ბრაუზერს არ აქვს ვიდეოს მხარდაჭერა.
+        <video width="320" height="240" controls style="background: black;">
+            <source src="./the-tune.mp4" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
-        <figcaption>Video: Media example.</figcaption>
-    </figure>
+        <p>Video: Media example.</p>
+    </section>
 
-    <hr>
-    
+    <section>
+        <h2>Form Section</h2>
+        <form>
+            <fieldset>
+                <legend>Question 1</legend>
+                <input type="radio" id="optA" name="q1" value="A"> <label for="optA">Option A</label>
+                <input type="radio" id="optB" name="q1" value="B"> <label for="optB">Option B</label>
+                <input type="radio" id="optC" name="q1" value="C"> <label for="optC">Option C</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 2</legend>
+                <input type="checkbox" id="ch1"> <label for="ch1">Choice 1</label>
+                <input type="checkbox" id="ch2"> <label for="ch2">Choice 2</label>
+                <input type="checkbox" id="ch3"> <label for="ch3">Choice 3</label>
+            </fieldset>
+
+            <p>
+                <label for="select">Input Label:</label>
+                <select id="select">
+                    <option>Select value</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="range">Range Input (1-10):</label>
+                <input type="range" id="range" min="1" max="10" value="5"> 5
+            </p>
+
+            <p>
+                <label for="textarea">Textarea Label:</label><br>
+                <textarea id="textarea" placeholder="Generic placeholder text..." rows="4" cols="40"></textarea>
+            </p>
+
+            <p>
+                Progress And Meter:
+                <progress value="70" max="100"></progress>
+                <meter value="0.6" min="0" max="1" low="0.3" high="0.8" optimum="0.9"></meter>
+            </p>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button> |
+            <button type="button">Check Answers</button>
+        </form>
+    </section>
+
+    <aside>
+        <h2>Aside Heading</h2>
+        <p><strong>Label One:</strong> sample, sample</p>
+        <p><strong>Label Two:</strong> sample, sample, sample</p>
+        <code>
+            &lt;main&gt;<br>
+            &nbsp;&nbsp;&lt;section&gt;...&lt;/section&gt;<br>
+            &lt;/main&gt;
+        </code>
+    </aside>
+
+    <p>End of generic markup page.</p>
+
 </body>
+
 </html>
